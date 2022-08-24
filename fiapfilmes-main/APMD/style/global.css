@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto&display=swap');
+
+
+:root{
+    --bg-primary: #111;
+    --bg-secundary: #2d2d2d;
+    --default: #FFF;
+    --destak: #f06;
+    --font-primary: 'Roboto', sans-serif;
+    --font-header: 'Bebas Neue', cursive;
+    --font-hero: 'Montserrat', sans-serif;
+}
+
+
+
+body{
+    background-color: var(--bg-primary);
+    color: var(--default);
+    font-family: var(--font-primary);
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    flex: 1;
+    background-color: var(--bg-secundary);
+}
+
+h1{
+    color: var(--destak);
+    font-family: var(--font-header);
+}
+
+h2{
+    border-left: var(--destak) solid 4px;
+    padding-left: .4em;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+}
+a{
+    color: var(--default);
+    text-decoration: none;
+}
+
+.hero{
+    font-family: var(--font-hero);
+    width: 1vw;
+}
+
+.hero img{
+    
+}
+
+.card{
+    width: 150px;
+}
+
+.card img{
+    width: 140px;
+    border-radius: .4em;
+}
+
+.rating .nota{
+    color: #929292;
+}
+
+.button{
+    background-color: var(--destak);
+    padding: .3em 1em;
+    border-radius: .2em;
+    margin: 1em;
+}
