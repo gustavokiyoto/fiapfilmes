@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto&display=swap');
+
+
+:root{
+    --bg-primary: #111;
+    --bg-secundary: #2d2d2d;
+    --default: #FFF;
+    --destak: #f06;
+    --font-primary: 'Roboto', sans-serif;
+    --font-header: 'Bebas Neue', cursive;
+    --font-hero: 'Montserrat', sans-serif;
+}
+
+
+
+body{
+    font-size: 1.0rem;
+    background-color: var(--bg-primary);
+    color: var(--default);
+    font-family: var(--font-primary);
+}
+
+header{
+    display: flex;
+    background-color: var(--bg-secundary);
+}
+
+h1{
+    color: var(--destak);
+    font-family: var(--font-header);
+}
+
+h2{
+    border-left: var(--destak) solid 4px;
+    padding-left: .4em;
+}
+
+.filmes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+nav{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+nav ul{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav li:last-child{
+    flex-grow: 1;
+    text-align: end;
+}
+
+a{
+    color: var(--default);
+    text-decoration: none;
+}
+
+.hero{
+    font-family: var(--font-hero);
+    height: 40rem;
+    position: relative;
+}
+
+.hero ::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("https://www.themoviedb.org/t/p/original/bn3fAIckhOFEnrIZNCSbgHXRHLY.jpg");
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    filter: opacity(.4);
+    box-shadow: inset 0 -100px 100px var(--bg-primary);
+
+}
+
+.hero p{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    text-shadow: 0px 4px 4px #000000;
+    padding: .5rem 1rem;
+}
+
+.card{
+    width: 150px;
+    align-items: center;
+    text-align: center;
+    background-color: #2d2d2d;
+}
+
+.card img{
+    width: 140px;
+    border-radius: .4em;
+    align-items: center;
+}
+
+.card .nota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .nota .material-icons{
+    color: yellow;
+
+}
+
+.rating .nota{
+    color: #929292;
+}
+
+.button{
+    background-color: var(--destak);
+    padding: .5em 1.5em;
+    border-radius: 5px;
+    margin: 5rem 2em;
+    transition: box-shadow .5s ease-in-out;
+}
+
+.button:hover{
+    box-shadow: 0 0 20px var(--destak);
+}

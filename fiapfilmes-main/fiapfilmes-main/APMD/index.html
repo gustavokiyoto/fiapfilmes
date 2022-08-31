@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1" >
+        <thead>
+            <tr >
+                <th>Lista de alunos</th>
+            </tr>
+            <tr>
+                <th>Números</th>
+                <th>nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bruno</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carla</td>
+            </tr>
+        </tbody>
+    
+        <tfoot>
+            <tr>
+                <td>total</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form action="#" method="get">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Digite o título do filme"/>
+
+        <label>Sinopse</label>
+        <textarea rows="10"></textarea>
+
+        <input type="checkbox" id="aceite">
+        <label for="aceite">Aceito os termos do site</label>
+
+        <input name="ondeassistir" type="radio" id="netflix">
+        <label for="netflix">Netflix</label>
+        <input name="ondeassistir" type="radio" id="amazon">
+        <label for="amazon">Amazon</label>
+        <input name="ondeassistir" type="radio" id="disney">
+        <label for="disney">Disney</label>
+
+        <select>
+            <optgroup label="Sudeste">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+            </optgroup>
+        </select>
+
+        <input type="number" step="10">
+        <input type="tel">
+        <input type="email">
+        <input type="date">
+        <input type="color">
+        <input type="file">
+        <input type="password">
+        <input type="reset">
+        <input type="search">
+        <input type="range" min="0" max="100" value="0">
+        
+
+        <input type="submit" />
+        <input type="button" value="buscar" />
+        <button>logar</button>
+    </form>
+
+
+
+</body>
+</html>
